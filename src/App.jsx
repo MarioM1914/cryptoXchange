@@ -1,9 +1,23 @@
-import React from 'react'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import News from './pages/News';
+import Wallet from './pages/Wallet';
+import Market from './pages/Market';
+import Profile from './pages/Profile';
 
 export default function App() {
   return (
-    <h1 className='text-red-500'>
-      App
-    </h1>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/sign-in' element={<SignIn />} />
+      <Route path='/sign-up' element={<SignUp />} />
+      <Route path='/news' element={<News />} />
+      <Route path='/wallet' element={<Wallet />} />
+      <Route path='/market' element={<Market />} />
+      <Route path='/profile' element={<Profile />} />
+    </Routes>
   )
 }
