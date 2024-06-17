@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Wallet() {
+const Wallet = () => {
   return (
     <div>
       Wallet
     </div>
   )
 }
+
+export default Wallet
