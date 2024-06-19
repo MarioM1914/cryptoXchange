@@ -17,6 +17,7 @@ const Navbar = () => {
 
   const isActive = (path) => location.pathname === path;
 
+  // outside sidebar click
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
@@ -36,7 +37,7 @@ const Navbar = () => {
 }, [isSidebarOpen]);
 
   return (
-    <nav>
+    <nav className="mb-4">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3">
           <span className="self-center text-xl text-white font-semibold whitespace-nowrap">

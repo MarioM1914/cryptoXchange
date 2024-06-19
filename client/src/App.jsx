@@ -13,7 +13,7 @@ import BuyCrypto from "./pages/BuyCrypto";
  const App = () => {
   return (
     <>
-      <div>
+      {/* <div> */}
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,7 +25,7 @@ import BuyCrypto from "./pages/BuyCrypto";
           <Route path="/market" element={<Market />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
-      </div>
+      {/* </div> */}
     </>
   );
 }
